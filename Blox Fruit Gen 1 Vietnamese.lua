@@ -2476,7 +2476,7 @@ local listfastattack = {'Normal Attack','Fast Attack','Super Fast Attack'}
         Multi = false,
         Default = 1,
     })
-    DropdownDelayAttack:SetValue("Fast Attack")
+    DropdownDelayAttack:SetValue("Super Fast Attack")
     DropdownDelayAttack:OnChanged(function(Value)
     _G.FastAttackbaptuoihub_Mode = Value
 	if _G.FastAttackbaptuoihub_Mode == "Fast Attack" then
