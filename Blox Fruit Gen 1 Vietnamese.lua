@@ -2810,7 +2810,7 @@ function TPchest(P1)
 
 if Third_Sea then
 local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {
-    Title = "Nhặt Rương dừng Khi Có Vật Phẩm[Bypass Teleport]",
+    Title = "Nhặt Rương dừng Khi Có Vật Phẩm[bypass tele]",
     Description = "", 
     Default = false })
 ToggleChest:OnChanged(function(Value)
@@ -2821,7 +2821,7 @@ end
 
 if Second_Sea then
 local ToggleChest = Tabs.Main:AddToggle("ToggleChest", {
-    Title = "Nhặt Rương dừng Khi Có Vật Phẩm [Bypass Teleport]",
+    Title = "Nhặt Rương dừng Khi Có Vật Phẩm [bypass tele]",
     Description = "", 
     Default = false })
 ToggleChest:OnChanged(function(Value)
@@ -3182,7 +3182,7 @@ end)
 
 local ToggleCake = Tabs.Main:AddToggle("ToggleCake", {
     Title = "Cày tư lệnh bột nè",
-    Description = "(Chúc ra đinh ba)", 
+    Description = "(chúc ra đinh ba)", 
     Default = false })
 ToggleCake:OnChanged(function(Value)
  _G.CakePrince = Value
@@ -3754,7 +3754,7 @@ if Third_Sea then
 
 
 
-    local ToggleFishCrew = Tabs.Main:AddToggle("ToggleFishCrew", {Title = "Giết Fish Crew",Description = "", Default = false })
+    local ToggleFishCrew = Tabs.Main:AddToggle("ToggleFishCrew", {Title = " Giết Fish Crew",Description = "", Default = false })
     ToggleFishCrew:OnChanged(function(Value)
        _G.AutoFishCrew = Value
     end)
@@ -5097,7 +5097,7 @@ Tabs.Teleport:AddButton({
 
 
 Tabs.Teleport:AddButton({
-    Title = "Sea 3a",
+    Title = "Sea 3",
     Description = "",
     Callback = function()
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("TravelZou")
@@ -5466,7 +5466,7 @@ spawn(function()
 
 
 
-local ToggleRandomFruit = Tabs.Fruit:AddToggle("ToggleRandomFruit", {Title = "Random Trái Ác Quỷ",Description = "(chúc ra trái xịn)", Default = false })
+local ToggleRandomFruit = Tabs.Fruit:AddToggle("ToggleRandomFruit", {Title = "Random Trái Ác Quỷ",Description = "(Chúc ra trái xịn)", Default = false })
 ToggleRandomFruit:OnChanged(function(Value)
     _G.Random_Auto = Value
 end)
@@ -5624,7 +5624,7 @@ spawn(function()
 end)
 
 
-local ToggleKillAura = Tabs.Raid:AddToggle("ToggleKillAura", {Title = "Auto Giết Quái yoyo",Description = "", Default = false })
+local ToggleKillAura = Tabs.Raid:AddToggle("ToggleKillAura", {Title = "Auto Giết Quái",Description = "", Default = false })
 ToggleKillAura:OnChanged(function(Value)
     KillAura = Value
 end)
@@ -5693,7 +5693,7 @@ spawn(function()
 end)
 
 
-local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Lấy Trái Ít Bely",Description = "", Default = false })
+local ToggleGetFruit = Tabs.Raid:AddToggle("ToggleGetFruit", {Title = "Lấy Trái Mua Chip Raid",Description = "(Ít Beli)", Default = false })
 ToggleGetFruit:OnChanged(function(Value)
     _G.Autofruit = Value
 end)
@@ -6815,7 +6815,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=16486409560" then
             Hop()
             Fluent:Notify({
-                Title = "Bắp Tươi Hub V3",
+                Title = "LDQ HUB",
                 Content = "Turn Off Find Full Moon...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6823,7 +6823,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=16486409560" then
             Hop()
             Fluent:Notify({
-                Title = "Bắp Tươi Hub V3",
+                Title = "LDQ HUB",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6831,7 +6831,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=16486409560" then
             Hop()
             Fluent:Notify({
-                Title = "Bắp Tươi Hub V3",
+                Title = "LDQ HUB",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6962,7 +6962,7 @@ ToggleRemoveNotify:OnChanged(function(Value)
 
 
 
-    local ToggleWhite = Tabs.Setting:AddToggle("ToggleWhite", {Title = "Màn hình Trắng (giảm lag)nè",Description = "", Default = false })
+    local ToggleWhite = Tabs.Setting:AddToggle("ToggleWhite", {Title = "Màn hình Trắng nè",Description = "(Giảm lag)", Default = false })
     ToggleWhite:OnChanged(function(Value)
        _G.WhiteScreen = Value
        if _G.WhiteScreen == true then
